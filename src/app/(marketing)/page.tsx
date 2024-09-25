@@ -1,3 +1,4 @@
+import Logo from "@/components/logo";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         height={472}
       />
       <div>
+        <Logo />
         <h1 className="text-5xl font-semibold my-6 max-w-[500px]">
           {" "}
           Manage your <span className="font-extrabold">pet daycare</span> with
@@ -19,6 +21,7 @@ export default function Home() {
           Use Petsoft to easily keep track of pets under your care. Get lifetime
           access for $299
         </p>
+        <div className="mt-10"></div>
       </div>
     </main>
   );
