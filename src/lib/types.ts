@@ -2,7 +2,7 @@ export type Pet = {
   id: string;
   name: string;
   imageUrl: string;
-  OwnerName: string;
+  ownerName: string;
   age: number;
   notes: string;
 };
