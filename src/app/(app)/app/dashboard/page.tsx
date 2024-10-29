@@ -1,5 +1,5 @@
 import Branding from "@/components/branding";
-import H1 from "@/components/h1";
+
 import React from "react";
 import Stats from "@/components/stats";
 import PetDetails from "@/components/pet-details";
