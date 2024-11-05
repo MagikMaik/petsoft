@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 
 type ContentBlockProps = {
-  className: string;
+  className?: string;
   children: React.ReactNode;
 };
 

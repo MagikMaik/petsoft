@@ -3,6 +3,7 @@ import usePetContext from "@/lib/hooks";
 import { Pet } from "@/lib/types";
 import Image from "next/image";
 import React from "react";
+import PetButton from "./pet-button";
 
 type Props = {
   pet: Pet;
@@ -43,7 +44,12 @@ function TopBar({ pet }: Props) {
         width={75}
         className=" h-[75px] w-[75px] rounded-full object-cover"
       />
-      <h2 className="text-3xl font-semibold leading-7 ml-5">{pet?.name}</h2>{" "}
+      <h2 className="text-3xl font-semibold leading-7 ml-5">{pet?.name}</h2>
+
+      <div className="ml-auto space-x-2">
+        <PetButton actionType="edit">Edit</PetButton>
+        <PetButton actionType="checkout">Checkout</PetButton>
+      </div>
     </div>
   );
 }
