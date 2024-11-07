@@ -27,11 +27,13 @@ export default function PetContextProvider({
   const [selectedPetId, setSelectedPetId] = useState<string | null>(null);
   const selectedPet = pets.find((pet) => pet.id === selectedPetId);
   const numberOfPets = pets.length;
+  
+  // EVENT HANDLERS//
   const handleSelectedPetId = (id: string) => {
     setSelectedPetId(id);
   };
-const handleAddPet = (pet: Pet) => {
-  
+  const handleAddPet = (pet: Pet) => {};
+
   const handleCheckoutPet = (id: string) => {
     setPets((prev) => prev.filter((pet) => pet.id !== id));
     setSelectedPetId(null);
