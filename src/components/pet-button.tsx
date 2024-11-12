@@ -41,6 +41,7 @@ export default function PetButton({
           </Button>
         )}
       </DialogTrigger>
+      
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
@@ -48,7 +49,7 @@ export default function PetButton({
           </DialogTitle>
         </DialogHeader>
 
-        <PetForm />
+        <PetForm actionType={actionType} />
       </DialogContent>
     </Dialog>
   );
